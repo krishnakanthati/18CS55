@@ -10,7 +10,6 @@ phoneRegex = re.compile(r'''(
             (\s*(ext|x|ext.)\s*(\d{2,5}))?       # extension
             )''', re.VERBOSE)
 
-
 emailRegex = re.compile(r'''(
             [a-zA-Z0-9._%+-]+                    # username
             @                                    # @ symbol
