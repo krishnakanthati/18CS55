@@ -1,10 +1,6 @@
 import re
 import pyperclip
 
-# file1 = open(r'inputs.txt', 'r')
-# inputs = ' '.join(file1.readlines())
-# print(inputs)
-
 phoneRegex = re.compile(r'''(
             (\d{3}|\(\d{3}\))?                   # area code
             (\s|-|\.)?                           # separator
@@ -23,7 +19,6 @@ emailRegex = re.compile(r'''(
             )''', re.VERBOSE)
 
 text = str(pyperclip.paste())
-# text = inputs
 matches = []
 
 for groups in phoneRegex.findall(text):
